@@ -1,0 +1,75 @@
+/*
+    Dark Blue: #080a52
+    Light Blue: #8aaae5
+    Main Font: Ayuthaya
+    Highlight Font: Righteous
+*/
+
+body {
+    font-family: 'ayuthayaregular';
+    background:#080a52;
+    font-size: 14px;
+    color: #fff;
+}
+
+.card{
+    background: #8aaae5;
+    border-radius: 20px;
+}
+
+.form-control{
+    width: 70px;
+    float: right;
+    margin-right: 10%;
+    background: #080a52;
+    color: #fff;
+}
+
+.form-group label{
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.form-group{
+    text-align: right;
+}
+
+.col-7{
+    padding-top: 8%;
+    padding-left: 5%;
+}
+
+.whatsmygpa{
+    text-align: left;
+    color: #080a52;
+    font-size: 500%;
+    border-left: solid 12px;
+    padding-left: 15px;
+    font-family: 'designerregular';
+}
+
+.btn-primary{
+    color: #080a52;
+    font-size: 20px;
+    background: #8aaae5;
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+.btn-primary:hover{
+    color: #fff;
+    font-size: 20px;
+    background: #080a52;
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+.modal-body{
+    background: #080a52;
+    color: #fff;
+}
+
+.modal-header{
+    background: #fff;
+    color: #080a52;
+}
