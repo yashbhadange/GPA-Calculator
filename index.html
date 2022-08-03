@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- TITLE -->
+    <title>What's My GPA?</title>
+    <!-- ICON -->
+    <link rel="shortcut icon" href="images/icon.webp" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="container">
+    <div class="row" style="margin-bottom: 5%;">
+        <div class="col-1"></div>
+        <div class="col-10">
+        <div class="card text-center" style="margin-top: 5%;">
+            <div class="card-header"><h2 class="animate__animated animate__flip">What's My GPA?</h2></div>
+            <div class="card-body">
+                <div class="row">
+                    <!-- LEFT HEADING -->
+                    <div class="col-7 animate__animated animate__flipInY">
+                        <div class="whatsmygpa">What's <br> My <br> GPA?</div>
+                    </div>
+                    <!-- LEFT HEADING ENDS -->
+                    <!-- FORM INPUTS -->
+                    <div class="col-5">
+                        <div class="">
+                            <!-- MATHS -->
+                            <div class="form-group">
+                                <label class="" for="exampleFormControlSelect1">Environment Engineering</label>
+                                <select class="form-control" id="maths">
+                                    <option>AA</option>
+                                    <option>AB</option>
+                                    <option>BB</option>
+                                    <option>BC</option>
+                                    <option>CC</option>
+                                    <option>CD</option>
+                                    <option>DD</option>
+                                    <option>FF</option>
+                                </select>
+                            </div>
+                            <!-- MACHINES I -->
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">DRCC</label>
+                                <select class="form-control" id="machines">
+                                    <option>AA</option>
+                                    <option>AB</option>
+                                    <option>BB</option>
+                                    <option>BC</option>
+                                    <option>CC</option>
+                                    <option>CD</option>
+                                    <option>DD</option>
+                                    <option>FF</option>
+                                </select>
+                            </div>
+                            <!-- NETWORKS I -->
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Pavement Engineering</label>
+                                <select class="form-control" id="networks">
+                                    <option>AA</option>
+                                    <option>AB</option>
+                                    <option>BB</option>
+                                    <option>BC</option>
+                                    <option>CC</option>
+                                    <option>CD</option>
+                                    <option>DD</option>
+                                    <option>FF</option>
+                                </select>
+                            </div>
+                            <!-- EDC -->
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Quantity Survey</label>
+                                <select class="form-control" id="edc">
+                                    <option>AA</option>
+                                    <option>AB</option>
+                                    <option>BB</option>
+                                    <option>BC</option>
+                                    <option>CC</option>
+                                    <option>CD</option>
+                                    <option>DD</option>
+                                    <option>FF</option>
+                                </select>
+                            </div>
+                            <!-- POWER SYSTEMS -->
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Advance Hydrology</label>
+                                <select class="form-control" id="powersystems">
+                                    <option>AA</option>
+                                    <option>AB</option>
+                                    <option>BB</option>
+                                    <option>BC</option>
+                                    <option>CC</option>
+                                    <option>CD</option>
+                                    <option>DD</option>
+                                    <option>FF</option>
+                                </select>
+                            </div>
+                            <!-- MACHINES LAB -->
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Project Management</label>
+                                <select class="form-control" id="machineslab">
+                                    <option>AA</option>
+                                    <option>AB</option>
+                                    <option>BB</option>
+                                    <option>BC</option>
+                                    <option>CC</option>
+                                    <option>CD</option>
+                                    <option>DD</option>
+                                    <option>FF</option>
+                                </select>
+                            </div>
+                            <!-- EDC LAB -->
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Construction Technique</label>
+                                <!-- <p>EDC LAB</p> -->
+                                <select class="form-control" id="edclab">
+                                    <option>AA</option>
+                                    <option>AB</option>
+                                    <option>BB</option>
+                                    <option>BC</option>
+                                    <option>CC</option>
+                                    <option>CD</option>
+                                    <option>DD</option>
+                                    <option>FF</option>
+                                </select>
+                            </div>
+                            <div> 
+                                <input type="button" style="margin-top: 5%; float: right;margin-right: 10%;" name="" value="Show my CGPA" class="btn btn-primary" onclick="calcy()">
+                            </div>            
+                        </div>
+                    </div>
+                    <!-- FORM INPUTS ENDS -->
+                </div>
+                <!-- FINAL RESULT -->
+                <h5 class="card-title" style="margin-top: 2%;">
+                    <p id="showData"></p>
+                </h5>
+                <!-- FINAL RESULT ENDS -->
+            </div>
+
+            <div class="card-footer text-muted">
+                <div class="row">
+                    <div class="col-6" style="color: #fff;">
+                        😎Built By @<a class="madeby" href="https://github.com/yashbhadange" title="Yash GitHub Repo">Yash Bhadange</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script>$.support.cors = true;</script>
+    <script src="static/jquery.js" crossorigin="anonymous"></script>
+    <script src="static/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="static/script.js"></script> 
+    </body>
+</html>
